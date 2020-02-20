@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:orientation="vertical"
+    app:cardElevation="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="2dp"
+    android:background="@drawable/style_one"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="History title"
+                android:layout_weight="0.5"
+                android:textStyle="bold"
+                android:id="@+id/hisTitleId"
+                android:textColor="@color/colorBlack"
+                android:padding="4dp"
+                android:lines="1"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="date"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/hisDateId"
+                android:lines="1"
+                android:background="#8dd6d9"
+                android:padding="4dp"
+                android:layout_weight="1.5"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:text="link"
+            android:lines="1"
+            android:textColor="@color/colorPrimaryDark"
+            android:padding="4dp"
+            android:id="@+id/hisLinkId"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorWhite"
+            android:layout_height="2dp"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

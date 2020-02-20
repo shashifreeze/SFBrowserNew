@@ -1,0 +1,21 @@
+date: 26-04-18
+1st update
+1.link to open any app from url intent    ............done
+2.edittext link manage................................done
+3.search bar hint delete option in setting.............done
+4.delete all history while exit the app.................done
+5.check for update option              .................self check for update
+6.fire base messaging...................................implemented but not working
+
+//........................................................................................................
+27-04-2018
+1.performance issue solved...... used async task for many long running tast on UI thread
+
+
+
+03/05/18
+
+1.firebase database included
+2.firebase storage included
+
+

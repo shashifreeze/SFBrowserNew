@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:background="@color/colorWhite"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/download_filenameTV"
+        android:text="file1"
+        android:lines="1"
+        android:textStyle="bold"
+        android:padding="3dp"
+        android:layout_height="wrap_content" />
+    <ProgressBar
+        android:layout_width="match_parent"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:id="@+id/download_progressBar"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="%"
+            android:id="@+id/downloading_perTV"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/download_time_leftTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:text="time left" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/downloading_speedTV"
+            android:text="speed"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="totalsize"
+            android:id="@+id/download_total_sizeTV"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/cancle_downloadBtn"
+            android:text="cancel"
+            android:textStyle="bold"
+            android:textColor="@color/colorRed"
+            android:gravity="center"
+            android:padding="5dp"
+            android:background="@color/colorCyan"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/pauseResumeBtn"
+            android:text="Pause"
+            android:background="@color/colorLightGreen"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="3dp"
+            android:textColor="@color/colorGreen"
+            android:gravity="center"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

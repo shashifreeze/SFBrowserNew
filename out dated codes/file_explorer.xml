@@ -1,0 +1,46 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent"
+    tools:context="in.blogspot.programmingdesire.sfbrowsernew.download_browser.FileExplorer">
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_gravity="top"
+       android:gravity="center"
+       android:id="@+id/sfd"
+       android:textStyle="bold"
+       android:fontFamily="monospace"
+       android:textColor="@color/colorWhite"
+       android:background="@color/colorTomato"
+       android:textSize="30sp"
+       android:text="SFDownloads"
+       android:padding="5dp"
+       android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+       android:layout_height="wrap_content" />
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/sfd"
+        android:layout_above="@+id/exit_dnd"
+        android:id="@+id/fileBrowserRv"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+      <Button
+          android:id="@+id/exit_dnd"
+          style="@android:style/Widget.DeviceDefault.Button.Borderless.Small"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+
+          android:text="Exit Downloads"
+          android:background="@color/colorTomato"
+          android:textStyle="bold"
+          android:textColor="@color/colorWhite" />
+  </RelativeLayout>
+</FrameLayout>

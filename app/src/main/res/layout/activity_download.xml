@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.blogspot.programmingdesire.sfbrowsernew.download.DownloadActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:id="@+id/downloadListFrameLayout"
+        android:layout_above="@+id/bottomDownloadLL"
+        android:layout_height="wrap_content">
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/files_ll"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="128dp"
+                android:src="@drawable/soundicon"
+                android:layout_margin="10dp"
+                android:id="@+id/filesAudioIV"
+                android:background="@color/colorRed"
+                android:layout_height="128dp" />
+            <ImageView
+                android:layout_width="128dp"
+                android:src="@drawable/movieicon"
+                android:layout_margin="10dp"
+                android:id="@+id/filesVideoIV"
+                android:background="@color/colorCyan"
+                android:layout_height="128dp" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="128dp"
+                android:src="@drawable/photosicon"
+                android:layout_margin="10dp"
+                android:id="@+id/filesImageIV"
+                android:background="@color/colorBlack"
+                android:layout_height="128dp" />
+            <ImageView
+                android:layout_width="128dp"
+                android:src="@drawable/documenticon"
+                android:background="@color/colorLightGreen"
+                android:layout_margin="10dp"
+                android:id="@+id/filesDocumetIV"
+                android:layout_height="128dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="match_parent"
+                android:background="@color/colorCyan"
+                android:text="Others"
+                android:layout_margin="16dp"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:id="@+id/filesOtherBtn"
+                android:fontFamily="casual"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottomDownloadLL"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Downloading"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorGreen"
+            android:id="@+id/downloadingBtn"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Files"
+            android:textColor="@color/colorGreen"
+            android:background="@color/colorWhite"
+            android:id="@+id/filesBtn"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</RelativeLayout>

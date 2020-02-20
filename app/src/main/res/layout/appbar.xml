@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:apps="http://schemas.android.com/apk/res-auto"
+    xmlns="http://schemas.android.com/tools"
+    android:id="@+id/appBar1"
+    apps:contentInsetEnd="0dp"
+    apps:contentInsetStart="0dp"
+    android:background="@color/colorWhite"
+    android:layout_height="44dp">
+    <LinearLayout
+        android:layout_marginLeft="0dp"
+        android:layout_width="match_parent"
+        android:id="@+id/up"
+        android:layout_height="44dp"
+        android:orientation="horizontal">
+
+        <EditText
+
+            android:id="@+id/editText"
+            android:layout_width="0dp"
+            android:maxLines="1"
+            android:layout_height="44dp"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            android:layout_weight="9"
+            android:background="@color/colorWhite"
+            android:textCursorDrawable="@null"
+            android:hint="Enter url or Search"
+            android:paddingLeft="10dp"
+            />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:id="@+id/img_clz_btn"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/close" />
+
+        <ImageButton
+            android:id="@+id/refresh_btn"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_refresh_black_24dp" />
+
+
+
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.Toolbar>

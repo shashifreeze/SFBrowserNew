@@ -1,0 +1,139 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent"
+    tools:context="in.blogspot.programmingdesire.sfbrowsernew.AboutFrag">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_above="@+id/exitAbout"
+            android:layout_alignParentTop="true"
+            android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+   <TextView
+       android:layout_width="match_parent"
+       android:id="@+id/app_version"
+       android:gravity="center_horizontal"
+       android:layout_gravity="center_horizontal"
+       android:layout_margin="5dp"
+       android:padding="10dp"
+       android:background="@color/colorLightBlack"
+       android:textColor="@color/colorWhite"
+       android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Click Here For Privacy Policy"
+            android:gravity="center"
+            android:id="@+id/privacyPolicy"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorLightBlack"
+            android:layout_margin="3dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Credits"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_margin="3dp"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorLightBlack"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/downloadLisene"
+            android:text="Click Here for Icon Lisense"
+
+            android:gravity="center"
+            android:background="@color/colorGreen"
+            android:textColor="@color/colorWhite"
+            android:padding="5dp"
+            android:layout_margin="3dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_margin="3dp"
+            android:padding="3dp"
+            android:text="www.flaticon.com"
+            android:gravity="center_horizontal"
+            android:id="@+id/flaticonLink"
+            android:textColor="#1f2bac"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:text="All File extension icons used in this app
+ is made by Dimitry Miroliubov from www.flaticon.com"
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_margin="3dp"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorGreen"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Link: https://www.flaticon.com/authors/dimitry-miroliubov"
+            android:layout_margin="3dp"
+            android:gravity="center_horizontal"
+            android:textColor="#1d1faf"
+            android:id="@+id/fileExtension"
+            android:padding="3dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Social media icons used in this app
+ is made by freepic from www.flaticon.com"
+            android:padding="5dp"
+            android:gravity="center"
+
+            android:layout_margin="3dp"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorGreen"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Link: https://www.freepik.com/"
+            android:layout_margin="3dp"
+            android:gravity="center_horizontal"
+            android:textColor="#1d1faf"
+            android:padding="3dp"
+            android:id="@+id/socialMedia"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:text="References"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_margin="3dp"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorLightBlack"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="1.stackoverflow.com\n2.androidhive.com\n3.developer.android.com"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+        </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:text="Back"
+        android:id="@+id/exitAbout"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorTomato"
+        android:layout_height="wrap_content" />
+    </RelativeLayout>
+</FrameLayout>

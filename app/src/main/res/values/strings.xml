@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SF Browser</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pref_fb">PREF_fbFaster</string>
+    <string name="pref_incognito">PREF_incognito</string>
+    <string name="pref_text_size">PREF_textSize</string>
+    <string name="pref_full_Screen">PREF_full</string>
+    <string name="pref_desktop_mode">PREF_DesktopMode</string>
+    <string name="pref_AllowCookies">PREF_AllowCookies</string>
+    <string name="pref_textOnly">pref_textOnly</string>
+    <string name="SF_PREFENCES">SFPrefences</string>
+    <string name="Pause">Pause</string>
+</resources>

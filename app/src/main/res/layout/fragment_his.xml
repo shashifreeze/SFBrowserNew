@@ -1,0 +1,51 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent"
+    tools:context="in.blogspot.programmingdesire.sfbrowsernew.history.HisFrag">
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:id="@+id/topll"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+      <Button
+          android:layout_width="0dp"
+          android:text="Clear All"
+          android:layout_gravity="bottom"
+          android:layout_weight="1"
+          android:textColor="@color/colorWhite"
+          android:background="@color/colorTomato"
+          style="@style/Base.Widget.AppCompat.Button.Borderless"
+          android:id="@+id/clearHistoryId"
+          android:layout_height="match_parent" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/backHisId"
+            android:background="#f1e7e7"
+            android:text="Back"
+            android:textColor="@color/colorTomato"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/HisRecyclerId"
+        android:background="@color/colorWhite"
+        android:layout_margin="3dp"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/topll"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+  </RelativeLayout>
+</FrameLayout>

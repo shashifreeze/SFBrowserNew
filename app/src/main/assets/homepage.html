@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<title>HomePage</title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css" />
+	<script src="./js/bootstrap.min.js"  ></script>
+	<script src="./js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+function googleSearch()
+{
+	var myUrl=document.getElementById("ser").value;
+	location="http://www.google.com/search?q="+myUrl;
+}
+</script>
+<style type="text/css">
+
+
+
+#btnSer{
+height:inherit;
+width:auto;
+box-shadow:1px 2px 4px rgba(0,0,0,0.5);
+border-radius:10px;
+padding-left:3%;
+padding-right:3%;
+text-align:center;
+
+text-decoration:blink;
+}
+img{
+max-height:50px;
+max-width:50px;
+}
+table{
+position:relative;
+height:auto;
+margin-left:4%;
+width:95%;
+}
+
+body{
+height:100%;
+width:auto;
+background:white;
+
+}
+tr{
+margin-bottom:20%;
+}
+</style>
+</head>
+
+<body >
+<br>
+<!--<center><input  align="middle" type="text"  name="textbox" onkeyDown="if(event.keyCode==13)-->
+<!--document.getElementById('btnSer').click()" id="ser" /></center><br>-->
+<!--<center><input type="button" value="search" id="btnSer"  onClick="googleSearch();"/></center><br>-->
+<!--<center>-->
+<div class="container">
+<div class="input-group mb-3">
+    <input type="text" class="form-control" onkeyDown="if(event.keyCode==13) document.getElementById('basic-addon2').click()" placeholder="Search on Google" aria-label="Recipient's username" id="ser" aria-describedby="basic-addon2">
+    <div class="input-group-append">
+        <span class="input-group-text" onClick="googleSearch();" id="basic-addon2">search</span>
+    </div>
+</div>
+</div>
+</div>
+
+<div align="center" >
+
+<table align="center" cellspacing="2%" cellpadding="2%" >
+			<tr align="center" >
+					<td >
+							<a href="https://www.google.com" ><img src="google.png" /></a>
+					</td>
+					
+					<td>
+							<a href="https://mbasic.facebook.com" ><img src="fb.png" /></a>
+					</td>
+					
+					<td>
+							<a href="https://www.twitter.com" ><img src="twitter.png" /></a>
+					</td>
+					
+					<td>
+							<a href="https://www.linkedin.com" ><img src="linkedin.png" /></a>
+					</td>
+					
+			</tr>
+
+
+
+			<tr align="center"> 
+					<td>
+							<a href="https://www.amazon.in" ><img src="amazon.png" alt="amazon"/></a>
+					</td>
+					
+					<td>
+							<a href="https://www.ebay.in" ><img src="ebay.png"  alt="ebay"/></a>
+					</td>
+					
+					<td>
+							<a href="https://www.youtube.com" ><img src="youtube.png"  alt="youtube"/></a>
+					</td>
+					
+					<td>
+							<a href="http://www.cricbuzz.com/" ><img src="cricket.png"  alt="crickbuzz"/></a>
+					</td>
+			</tr>
+			</table>
+	</div>
+</center>
+<div >
+    <center>
+		<br>
+    <h6>Most popular Mp3 Sites</h6>
+
+		<a href="https://freshmaza.net" class="badge badge-primary">FreshMaza</a>&nbsp; &nbsp;<a href="https:muskurahat.com" class="badge badge-primary">Muskurahat.com</a>&nbsp; &nbsp;
+		<a href="https://www.mr-jatt.org" class="badge badge-primary">Mr-Jatt</a><br><br>
+		<a href="https://www.downloadming.ms" class="badge badge-primary">DownloadMing</a>&nbsp; &nbsp;<a href="https://mymp3singer.info" class="badge badge-primary">MyMp3Singer</a>&nbsp; &nbsp;
+		<a href="https://www.djpunjab.com" class="badge badge-primary">DJ Punjab</a><br><br>
+    </center>
+</div>
+
+</body>
+</html>
