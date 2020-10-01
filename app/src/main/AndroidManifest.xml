@@ -4,7 +4,6 @@
     package="in.blogspot.programmingdesire.sfbrowsernew">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"  />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -16,7 +15,9 @@
         android:label="@string/app_name"
         android:largeHeap="true"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:requestLegacyExternalStorage="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="q">
         <activity
             android:name=".MainActivity"
             android:configChanges="orientation|screenSize"
@@ -86,8 +87,8 @@
                 android:resource="@xml/provider_paths" />
         </provider>
 
-        <activity android:name=".download.DownloadActivity"></activity>
-        <activity android:name=".download.FilesActivity"></activity>
+        <activity android:name=".download.DownloadActivity" />
+        <activity android:name=".download.FilesActivity" />
     </application>
 
 </manifest>

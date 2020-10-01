@@ -37,7 +37,7 @@ public class DBAdapter extends SQLiteOpenHelper {
     }
     public Cursor readDB()
     {
-        String colomn[]={"title","url","date"};
+        String[] colomn ={"title","url","date"};
         return sqLiteDatabase.query("hisTable",colomn,null,null,null,null,null,null);
     }
     public void addData(String title,String url,String date)
